@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="243.0" prefWidth="666.0" spacing="20.0" stylesheets="@secondaryStyle.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SecondaryController">
+   <children>
+      <Label text="Filtre" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin></Label>
+      <VBox prefHeight="145.0" prefWidth="582.0" spacing="10.0" styleClass="allHbox" stylesheets="@secondaryStyle.css">
+         <children>
+            <HBox prefHeight="28.0" prefWidth="600.0" spacing="10.0">
+               <children>
+                  <CheckBox fx:id="checkBoxFiltreDate" mnemonicParsing="false" text="Date" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </CheckBox>
+                  <ChoiceBox fx:id="ChoiceBoxExpression" prefWidth="150.0" />
+                  <ChoiceBox fx:id="ChoiceBoxAvantLe" prefWidth="150.0" />
+                  <DatePicker fx:id="datePickerFiltre" />
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="25.0" prefWidth="600.0">
+               <children>
+                  <CheckBox fx:id="CheckBoxImagePresente" mnemonicParsing="false" text="Image présente" textFill="WHITE" />
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="0.0" prefWidth="600.0" spacing="10.0">
+               <children>
+                  <Button fx:id="btnAnnulerFiltre" mnemonicParsing="false" onAction="#annulerFiltre" prefHeight="27.0" prefWidth="102.0" text="Annuler" />
+                  <Button fx:id="btnAppliquerFiltre" mnemonicParsing="false" onAction="#appliquerFiltre" prefHeight="27.0" prefWidth="105.0" text="Appliquer" />
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </HBox>
+         </children>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+   </padding>
+</VBox>

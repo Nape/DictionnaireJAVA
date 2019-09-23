@@ -1,0 +1,46 @@
+.root
+{
+    -fx-background-image: url("imageFond.jpg");
+    -fx-background-size: cover;
+}
+
+.menu-bar, .menu-item, .menu-button
+{
+    -fx-background-color: #75777e;
+    -fx-text-fill: white;
+
+
+}
+
+.vBoxFiltre
+{
+    -fx-background-color: black;
+    -fx-opacity: 0.7;
+    -fx-border-color: white;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-text-fill: white;
+}
+
+.text-area, .text-field, .list-view
+{
+    -fx-background-color: black;
+    -fx-opacity: 0.7;
+    -fx-border-color: white;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-text-fill: white;
+
+}
+.text-area .scroll-pane
+{
+    -fx-background-color: transparent;
+}
+.text-area .scroll-pane .viewport
+{
+    -fx-background-color: transparent;
+}
+.text-area .scroll-pane .content
+{
+    -fx-background-color: transparent;
+}

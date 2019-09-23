@@ -1,0 +1,14 @@
+.root
+{
+    -fx-background-image: url("imageFond.jpg");
+    -fx-background-size: cover;
+}
+.allHbox
+{
+    -fx-background-color: black;
+    -fx-opacity: 0.7;
+    -fx-border-color: white;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-text-fill: white;
+}
